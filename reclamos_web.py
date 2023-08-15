@@ -63,7 +63,7 @@ def main():
         
         plt.xticks(rotation=90)
         
-        sns.barplot(x=df['Category'], y=df['Scores']* 100,ax=ax,color="b")
+        sns.barplot(x=df['label'], y=df['scores']* 100,ax=ax,color="b").set(xlabel="Category", ylabel="Score")
         st.pyplot(fig)
         
     # Retroalimentación del usuario
